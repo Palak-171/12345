@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	     <title>Air Quality Prediction System</title>
+		 <meta charset="utf-8">
+		 <meta name="viewport" content="width=device-width,
+		 initial-scale=1">
+		 
+		 <link rel="stylesheet" type="text/css" href="css/style.css">
+		 
+		 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+		 crossorigin="anonymous">
+	     
+         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+	      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	 
+    <body>
+	  <div class="row">
+				   <nav id="navbar-example2" class="navbar navbar-dark bg-dark ">
+				   <div class="container">
+
+                      <a class="navbar-brand" href="#">Air Quality Prediction System</a>
+                        <ul class="nav nav-pills"> 
+                       <li class="nav-item"> 
+                          <a class="nav-link " href="index.html">Home</a>
+                     </li> 
+					  
+                      <li class="nav-item"> 
+                       <a class="nav-link" href="aboutaqi.html">About AQI</a>  
+                     </li>  
+				    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="predictaqi.html">Predict AQI</a>  
+                     </li>  
+				     <li class="nav-item"> 
+                       <a class="nav-link text-capitalize" href="ourteam.html">Our Team</a>  
+                    </li>  
+    
+                       </ul> 
+                     </div>
+ 
+                 </nav>
+                 </div>
+  <section class="main_heading my-5">
+             <div class="text-center">
+	         <h1 class="display-2">Predict</h1>
+		     <hr class="w-25 mx-auto" >
+	          </hr>
+	          <!-- <div class="py-2 offer_style"> -->
+      
+             
+		           
+			
+  <div class="py-2 offer_style">
+<body onload="resetSelection()">
+	 <br>
+   <h1 class="text-centre text-danger"><b> Air Quality Index<b></h1>
+	
+           <div class="py-2 offer_style"> 
+       <div class="row">
+	                     
+          
+	     
+
+  <table class="table table-hover table-center"> 
+ 
+  
+         
+	<form action='/predict' method="POST">  
+		<tr><td> Sulphur Dioxide Concentration (SO2)
+			<td>  <input type=float name="so2"  placeholder="enter integer value" >
+        </tr>
+        
+		<tr><td> Nitrogen Dioxide Concentration (N02)
+			<td>  <input type=float name="no2"  placeholder="enter integer value" >
+        </tr>
+		<tr><td> Respirable Suspended Particualte Matter Concentration (RSPM)
+			<td>  <input type=float name="rspm"  placeholder="enter integer value" >
+        </tr>
+		<tr><td>  Suspended Particulate Matter Concentration (SPM)
+			<td>  <input  type=float name="spm"  placeholder="enter integer value" >
+        </tr>
+		 
+		    <tr>
+		<td colspan=2 align=center><br><button type="submit" class=" btn-btn-danger">Predict</button>
+		</tr>
+  </table>
+    </form>
+       
+        <br> {{pred}}<br>  
+       	   
+			<div class="img-center">
+				<br><img src="images/001.jpeg"  class="mx-auto d-block"
+		       height="500px" width="800px">		
+				</div></centre>	  
+				
+				</div>
+				</div>
+</section>	
+
+
+
+
+		<footer class="bg-secondary  text-white"><br>
+		
+        <div class="text-center">
+		  
+		   <a  href="https://github.com/Palak-171" class="fa fa-github">
+		  </a>
+		  <a href="mailto:www.lovekaranverma33@gmail.com"class="fa fa-google">
+		  <br>
+		  </a>
+		 
+		
+       <p>Copyright 2021, @bhangotrapalak
+	       @lovekaranverma</p>	 
+		   </div>
+	  </footer>
+		
+		
+	     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script> 
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script> 
+	 
+	 
+	 
+	 
+     </body>
+</html>	 
